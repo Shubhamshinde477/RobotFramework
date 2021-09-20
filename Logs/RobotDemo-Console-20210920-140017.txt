@@ -1,0 +1,65 @@
+command: robot -A C:\Users\Shubham\AppData\Local\Temp\RIDElj099b8l.d\argfile.txt --listener c:\python39\lib\site-packages\robotide\contrib\testrunner\TestRunnerAgent.py:57020:False H:\RobotDemo
+
+TestRunnerAgent: Running under CPython 3.9.4
+
+===========================================================================================================================================================
+RobotDemo                                                                                                                                                  
+===========================================================================================================================================================
+
+RobotDemo.MyFirstTestSuite                                                                                                                                 
+===========================================================================================================================================================
+firstFile.robot                                                                                                                                    This is my first working test case
+
+
+
+[ ERROR ] Error in file 'H:\RobotDemo\Resources\LoginResources.robot' on line 4: Importing library 'JsonActions.py.JsonOperations' failed: ModuleNotFoundError: No module named 'JsonActions'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Python39\Scripts\robot.exe
+  c:\python39\python39.zip
+  c:\python39\DLLs
+  c:\python39\lib
+  c:\python39
+  c:\python39\lib\site-packages
+  c:\python39\lib\site-packages\pip-21.2.4-py3.9.egg
+  c:\python39\lib\site-packages\win32
+  c:\python39\lib\site-packages\win32\lib
+  c:\python39\lib\site-packages\Pythonwin
+  c:\python39\lib\site-packages\robotide\contrib\testrunner\../../lib
+
+| PASS |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+SecondRobot                                                                                                                                        Starting Orange HRM website
+
+| FAIL |
+Dictionary '${credentials}' has no key 'Username'.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+ThirdRobot.robot                                                                                                                                   Started 3rd Test
+
+[ SENDING STOP SIGNAL ]
+
+Second signal will force exit.
+
+| FAIL |
+Dictionary '${credentials}' has no key 'Username'.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+JsonData.robot                                                                                                                                     | FAIL |
+Execution terminated by signal
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+RobotDemo.MyFirstTestSuite                                                                                                                         | FAIL |
+4 tests, 1 passed, 3 failed
+===========================================================================================================================================================
+RobotDemo                                                                                                                                          | FAIL |
+4 tests, 1 passed, 3 failed
+===========================================================================================================================================================
+Debug:   H:\RobotDemo\Logs\RobotDemo-Message-20210920-140018.log
+Output:  H:\RobotDemo\Logs\RobotDemo-Output-20210920-140018.xml
+
+Log:     H:\RobotDemo\Logs\RobotDemo-Log-20210920-140018.html
+
+Report:  H:\RobotDemo\Logs\RobotDemo-Report-20210920-140018.html
+
+
+
+Test finished 20210920 14:00:51

@@ -1,0 +1,111 @@
+==============================================================================
+20210914 22:38:22.962 - INFO - + START SUITE: RobotDemo [ ]
+==============================================================================
+20210914 22:38:22.987 - INFO - +- START SUITE: RobotDemo.MyFirstTestSuite [ ]
+==============================================================================
+20210914 22:38:22.991 - INFO - +-- START TEST: firstFile.robot [ ]
+------------------------------------------------------------------------------
+20210914 22:38:22.991 - INFO - +--- START KEYWORD: BuiltIn.Log To Console [ This is my first working test case ]
+20210914 22:38:22.991 - INFO - +--- END KEYWORD: BuiltIn.Log To Console (0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20210914 22:38:22.996 - INFO - +--- START KEYWORD: SeleniumLibrary.Open Browser [ ${url} | Chrome ]
+20210914 22:38:22.996 - INFO - Opening browser 'Chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.
+20210914 22:38:29.567 - DEBUG - Opened browser with session id 7f40e2a736f01de2d0b4840ebee13a80.
+20210914 22:38:29.567 - INFO - +--- END KEYWORD: SeleniumLibrary.Open Browser (6571)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20210914 22:38:29.567 - INFO - +--- START KEYWORD: SeleniumLibrary.Maximize Browser Window [ ]
+20210914 22:38:29.697 - INFO - +--- END KEYWORD: SeleniumLibrary.Maximize Browser Window (130)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20210914 22:38:29.697 - INFO - +--- START KEYWORD: BuiltIn.Sleep [ 10 seconds ]
+20210914 22:38:39.714 - INFO - Slept 10 seconds
+20210914 22:38:39.714 - INFO - +--- END KEYWORD: BuiltIn.Sleep (10017)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20210914 22:38:39.714 - INFO - +--- START KEYWORD: SeleniumLibrary.Close Browser [ ]
+20210914 22:38:39.714 - DEBUG - Closing browser with session id 7f40e2a736f01de2d0b4840ebee13a80.
+20210914 22:38:42.176 - INFO - +--- END KEYWORD: SeleniumLibrary.Close Browser (2462)
+------------------------------------------------------------------------------
+20210914 22:38:42.176 - INFO - +-- END TEST: firstFile.robot (19185)
+------------------------------------------------------------------------------
+20210914 22:38:42.176 - INFO - +-- START TEST: SecondRobot [ ]
+------------------------------------------------------------------------------
+20210914 22:38:42.176 - INFO - +--- START KEYWORD: BuiltIn.Log To Console [ Starting Orange HRM website ]
+20210914 22:38:42.176 - INFO - +--- END KEYWORD: BuiltIn.Log To Console (0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20210914 22:38:42.176 - INFO - +--- START KEYWORD: SeleniumLibrary.Open Browser [ ${url} | Chrome ]
+20210914 22:38:42.184 - INFO - Opening browser 'Chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.
+20210914 22:38:49.687 - DEBUG - Opened browser with session id 66c8f3ffc07e36272431fb957e9d94ea.
+20210914 22:38:49.692 - INFO - +--- END KEYWORD: SeleniumLibrary.Open Browser (7511)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20210914 22:38:49.692 - INFO - +--- START KEYWORD: SeleniumLibrary.Maximize Browser Window [ ]
+20210914 22:38:49.812 - INFO - +--- END KEYWORD: SeleniumLibrary.Maximize Browser Window (120)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20210914 22:38:49.812 - INFO - +--- START KEYWORD: LoginResources.Login [ ]
+20210914 22:38:49.817 - INFO - +---- START KEYWORD: SeleniumLibrary.Input Text [ id:txtUsername | ${credentials}[username] ]
+20210914 22:38:49.817 - INFO - Typing text 'Admin' into text field 'id:txtUsername'.
+20210914 22:38:49.997 - INFO - +---- END KEYWORD: SeleniumLibrary.Input Text (180)
+20210914 22:38:49.997 - INFO - +---- START KEYWORD: SeleniumLibrary.Input Password [ id:txtPassword | ${credentials}[password] ]
+20210914 22:38:50.002 - INFO - Typing password into text field 'id:txtPassword'.
+20210914 22:38:50.066 - INFO - Temporally setting log level to: NONE
+20210914 22:38:50.066 - INFO - Log level changed from INFO to NONE.
+20210914 22:38:50.167 - INFO - Log level changed from NONE to INFO.
+20210914 22:38:50.172 - INFO - +---- END KEYWORD: SeleniumLibrary.Input Password (175)
+20210914 22:38:50.172 - INFO - +---- START KEYWORD: BuiltIn.Sleep [ 10 seconds ]
+20210914 22:39:00.182 - INFO - Slept 10 seconds
+20210914 22:39:00.182 - INFO - +---- END KEYWORD: BuiltIn.Sleep (10010)
+20210914 22:39:00.182 - INFO - +---- START KEYWORD: SeleniumLibrary.Click Button [ id=btnLogin ]
+20210914 22:39:00.182 - INFO - Clicking button 'id=btnLogin'.
+20210914 22:39:04.412 - INFO - +---- END KEYWORD: SeleniumLibrary.Click Button (4230)
+20210914 22:39:04.412 - INFO - +---- START KEYWORD: BuiltIn.Sleep [ 10 seconds ]
+20210914 22:39:14.421 - INFO - Slept 10 seconds
+20210914 22:39:14.421 - INFO - +---- END KEYWORD: BuiltIn.Sleep (10009)
+20210914 22:39:14.421 - INFO - +--- END KEYWORD: LoginResources.Login (24609)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20210914 22:39:14.421 - INFO - +--- START KEYWORD: BuiltIn.Sleep [ 10 seconds ]
+20210914 22:39:24.421 - INFO - Slept 10 seconds
+20210914 22:39:24.421 - INFO - +--- END KEYWORD: BuiltIn.Sleep (10000)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20210914 22:39:24.421 - INFO - +--- START KEYWORD: BuiltIn.Log To Console [ Title Should Be | OrangeHRM ]
+20210914 22:39:24.421 - INFO - +--- END KEYWORD: BuiltIn.Log To Console (0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20210914 22:39:24.426 - INFO - +--- START KEYWORD: SeleniumLibrary.Close Browser [ ]
+20210914 22:39:24.432 - DEBUG - Closing browser with session id 66c8f3ffc07e36272431fb957e9d94ea.
+20210914 22:39:27.329 - INFO - +--- END KEYWORD: SeleniumLibrary.Close Browser (2903)
+------------------------------------------------------------------------------
+20210914 22:39:27.329 - INFO - +-- END TEST: SecondRobot (45153)
+------------------------------------------------------------------------------
+20210914 22:39:27.329 - INFO - +-- START TEST: ThirdRobot.robot [ ]
+------------------------------------------------------------------------------
+20210914 22:39:27.329 - INFO - +--- START KEYWORD: OperatingSystem.Empty Directory [ ../RobotDemo/Logs ]
+20210914 22:39:27.329 - INFO - Listing contents of directory '<a href="file://H:\RobotDemo\Logs">H:\RobotDemo\Logs</a>'.
+20210914 22:39:27.341 - FAIL - PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'H:\\RobotDemo\\Logs\\RobotDemo-Message-20210914-223822.log'
+20210914 22:39:27.341 - DEBUG - Traceback (most recent call last):
+  None
+20210914 22:39:27.341 - INFO - +--- END KEYWORD: OperatingSystem.Empty Directory (12)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20210914 22:39:27.346 - INFO - +--- START KEYWORD: BuiltIn.Log To Console [ Started 3rd Test ]
+20210914 22:39:27.346 - INFO - +--- END KEYWORD: BuiltIn.Log To Console (0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20210914 22:39:27.346 - INFO - +--- START KEYWORD: SeleniumLibrary.Open Browser [ ${url} | chrome ]
+20210914 22:39:27.346 - INFO - +--- END KEYWORD: SeleniumLibrary.Open Browser (0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20210914 22:39:27.346 - INFO - +--- START KEYWORD: LoginResources.Login [ ]
+20210914 22:39:27.346 - INFO - +--- END KEYWORD: LoginResources.Login (0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20210914 22:39:27.346 - INFO - +--- START KEYWORD: SeleniumLibrary.Maximize Browser Window [ ]
+20210914 22:39:27.346 - INFO - +--- END KEYWORD: SeleniumLibrary.Maximize Browser Window (0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20210914 22:39:27.351 - INFO - +--- START KEYWORD: BuiltIn.Sleep [ 10 seconds ]
+20210914 22:39:27.351 - INFO - +--- END KEYWORD: BuiltIn.Sleep (0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20210914 22:39:27.356 - INFO - +--- START KEYWORD: SeleniumLibrary.Close Browser [ ]
+20210914 22:39:27.372 - INFO - +--- END KEYWORD: SeleniumLibrary.Close Browser (6)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20210914 22:39:27.377 - INFO - +--- START KEYWORD: BuiltIn.Log To Console [ 3rd test Ran successfully and Logs file saved successfully ]
+20210914 22:39:27.382 - INFO - +--- END KEYWORD: BuiltIn.Log To Console (10)
+------------------------------------------------------------------------------
+20210914 22:39:27.387 - INFO - +-- END TEST: ThirdRobot.robot (53)
+------------------------------------------------------------------------------
+20210914 22:39:27.391 - INFO - +- END SUITE: RobotDemo.MyFirstTestSuite (64420)
+==============================================================================
+20210914 22:39:27.396 - INFO - + END SUITE: RobotDemo (65134)
+==============================================================================

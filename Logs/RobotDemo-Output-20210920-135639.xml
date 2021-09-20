@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1 (Python 3.9.4 on win32)" generated="20210920 13:56:39.343" rpa="false" schemaversion="2">
+<suite id="s1" name="RobotDemo" source="H:\RobotDemo">
+<suite id="s1-s1" name="MyFirstTestSuite" source="H:\RobotDemo\MyFirstTestSuite.robot">
+<test id="s1-s1-t1" name="firstFile.robot">
+<kw name="Log To Console" library="BuiltIn">
+<arg>This is my first working test case</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210920 13:56:39.916" endtime="20210920 13:56:39.917"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210920 13:56:39.920" level="INFO">Opening browser 'Chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<status status="PASS" starttime="20210920 13:56:39.918" endtime="20210920 13:56:44.615"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210920 13:56:44.617" endtime="20210920 13:56:44.741"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210920 13:56:54.747" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20210920 13:56:44.741" endtime="20210920 13:56:54.747"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210920 13:56:54.747" endtime="20210920 13:56:57.069"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210920 13:56:57.074" endtime="20210920 13:56:57.077"/>
+</kw>
+<status status="PASS" starttime="20210920 13:56:39.914" endtime="20210920 13:56:57.078"/>
+</test>
+<test id="s1-s1-t2" name="SecondRobot">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Starting Orange HRM website</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210920 13:56:57.091" endtime="20210920 13:56:57.093"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210920 13:56:57.096" level="INFO">Opening browser 'Chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<status status="PASS" starttime="20210920 13:56:57.094" endtime="20210920 13:57:02.051"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210920 13:57:02.052" endtime="20210920 13:57:02.181"/>
+</kw>
+<kw name="Login" library="LoginResources">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:txtUsername</arg>
+<arg>${credentials}[Username]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210920 13:57:02.181" level="FAIL">Dictionary '${credentials}' has no key 'Username'.</msg>
+<status status="FAIL" starttime="20210920 13:57:02.181" endtime="20210920 13:57:02.181"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:txtPassword</arg>
+<arg>${password}[password]</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210920 13:57:02.181" endtime="20210920 13:57:02.181"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20210920 13:57:02.181" endtime="20210920 13:57:02.181"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id=btnLogin</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210920 13:57:02.181" endtime="20210920 13:57:02.181"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20210920 13:57:02.181" endtime="20210920 13:57:02.181"/>
+</kw>
+<status status="FAIL" starttime="20210920 13:57:02.181" endtime="20210920 13:57:02.181"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20210920 13:57:02.181" endtime="20210920 13:57:02.181"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Title Should Be</arg>
+<arg>OrangeHRM</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20210920 13:57:02.181" endtime="20210920 13:57:02.181"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20210920 13:57:02.181" endtime="20210920 13:57:02.181"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210920 13:57:02.181" endtime="20210920 13:57:04.386"/>
+</kw>
+<status status="FAIL" starttime="20210920 13:56:57.084" endtime="20210920 13:57:04.390">Dictionary '${credentials}' has no key 'Username'.</status>
+</test>
+<test id="s1-s1-t3" name="ThirdRobot.robot">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Started 3rd Test</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210920 13:57:04.400" endtime="20210920 13:57:04.406"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210920 13:57:04.414" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<status status="PASS" starttime="20210920 13:57:04.410" endtime="20210920 13:57:09.564"/>
+</kw>
+<kw name="Login" library="LoginResources">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:txtUsername</arg>
+<arg>${credentials}[Username]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210920 13:57:09.568" level="FAIL">Dictionary '${credentials}' has no key 'Username'.</msg>
+<status status="FAIL" starttime="20210920 13:57:09.566" endtime="20210920 13:57:09.569"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:txtPassword</arg>
+<arg>${password}[password]</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210920 13:57:09.569" endtime="20210920 13:57:09.570"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20210920 13:57:09.570" endtime="20210920 13:57:09.571"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id=btnLogin</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210920 13:57:09.571" endtime="20210920 13:57:09.571"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20210920 13:57:09.572" endtime="20210920 13:57:09.573"/>
+</kw>
+<status status="FAIL" starttime="20210920 13:57:09.565" endtime="20210920 13:57:09.574"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20210920 13:57:09.575" endtime="20210920 13:57:09.576"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20210920 13:57:09.576" endtime="20210920 13:57:09.577"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20210920 13:57:09.578" endtime="20210920 13:57:09.578"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>3rd test Ran successfully and Logs file saved successfully</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20210920 13:57:09.579" endtime="20210920 13:57:09.579"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210920 13:57:09.580" endtime="20210920 13:57:11.813"/>
+</kw>
+<status status="FAIL" starttime="20210920 13:57:04.395" endtime="20210920 13:57:11.814">Dictionary '${credentials}' has no key 'Username'.</status>
+</test>
+<test id="s1-s1-t4" name="JsonData.robot">
+<for flavor="IN">
+<var>${username}</var>
+<value>@{user}</value>
+<iter>
+<var name="${username}">access_key</var>
+<for flavor="IN">
+<var>${password}</var>
+<value>@{password}</value>
+<iter>
+<var name="${password}">access_key</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Testing Json robot Framework Demo with different usernames and password</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210920 13:57:11.823" endtime="20210920 13:57:11.824"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210920 13:57:11.825" level="INFO">Opening browser 'Chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<status status="PASS" starttime="20210920 13:57:11.824" endtime="20210920 13:57:16.595"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210920 13:57:16.596" endtime="20210920 13:57:16.719"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210920 13:57:26.727" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20210920 13:57:16.720" endtime="20210920 13:57:26.728"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=txtUsername</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210920 13:57:26.731" level="INFO">Typing text 'access_key' into text field 'id=txtUsername'.</msg>
+<status status="PASS" starttime="20210920 13:57:26.729" endtime="20210920 13:57:26.860"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=txtPassword</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210920 13:57:26.861" level="INFO">Typing text 'access_key' into text field 'id=txtPassword'.</msg>
+<status status="PASS" starttime="20210920 13:57:26.860" endtime="20210920 13:57:26.956"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210920 13:57:36.957" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20210920 13:57:26.957" endtime="20210920 13:57:36.958"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id=btnLogin</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20210920 13:57:36.959" level="INFO">Clicking button 'id=btnLogin'.</msg>
+<status status="PASS" starttime="20210920 13:57:36.958" endtime="20210920 13:57:38.421"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210920 13:57:48.428" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20210920 13:57:38.421" endtime="20210920 13:57:48.429"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210920 13:57:48.430" endtime="20210920 13:57:50.637"/>
+</kw>
+<status status="PASS" starttime="20210920 13:57:11.822" endtime="20210920 13:57:50.639"/>
+</iter>
+<iter>
+<var name="${password}">password</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Testing Json robot Framework Demo with different usernames and password</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210920 13:57:50.641" endtime="20210920 13:57:50.643"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210920 13:57:50.647" level="INFO">Opening browser 'Chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<status status="PASS" starttime="20210920 13:57:50.645" endtime="20210920 13:57:55.726"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210920 13:57:55.726" endtime="20210920 13:57:55.851"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210920 13:58:05.860" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20210920 13:57:55.852" endtime="20210920 13:58:05.862"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=txtUsername</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210920 13:58:05.868" level="INFO">Typing text 'access_key' into text field 'id=txtUsername'.</msg>
+<status status="PASS" starttime="20210920 13:58:05.864" endtime="20210920 13:58:06.031"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=txtPassword</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210920 13:58:06.033" level="INFO">Typing text 'password' into text field 'id=txtPassword'.</msg>
+<status status="PASS" starttime="20210920 13:58:06.032" endtime="20210920 13:58:06.140"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210920 13:58:16.147" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20210920 13:58:06.140" endtime="20210920 13:58:16.149"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id=btnLogin</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20210920 13:58:16.154" level="INFO">Clicking button 'id=btnLogin'.</msg>
+<status status="PASS" starttime="20210920 13:58:16.151" endtime="20210920 13:58:17.624"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210920 13:58:27.632" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20210920 13:58:17.624" endtime="20210920 13:58:27.633"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210920 13:58:27.635" endtime="20210920 13:58:29.970"/>
+</kw>
+<status status="PASS" starttime="20210920 13:57:50.640" endtime="20210920 13:58:29.972"/>
+</iter>
+<status status="PASS" starttime="20210920 13:57:11.821" endtime="20210920 13:58:29.974"/>
+</for>
+<status status="PASS" starttime="20210920 13:57:11.820" endtime="20210920 13:58:29.975"/>
+</iter>
+<iter>
+<var name="${username}">user</var>
+<for flavor="IN">
+<var>${password}</var>
+<value>@{password}</value>
+<msg timestamp="20210920 13:58:29.980" level="FAIL">Value of variable '@{password}' is not list or list-like.</msg>
+<status status="FAIL" starttime="20210920 13:58:29.979" endtime="20210920 13:58:29.982"/>
+</for>
+<status status="FAIL" starttime="20210920 13:58:29.977" endtime="20210920 13:58:29.985"/>
+</iter>
+<status status="FAIL" starttime="20210920 13:57:11.819" endtime="20210920 13:58:29.987"/>
+</for>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210920 13:58:29.991" endtime="20210920 13:58:29.994"/>
+</kw>
+<status status="FAIL" starttime="20210920 13:57:11.817" endtime="20210920 13:58:29.997">Value of variable '@{password}' is not list or list-like.</status>
+</test>
+<status status="FAIL" starttime="20210920 13:56:39.703" endtime="20210920 13:58:30.004"/>
+</suite>
+<status status="FAIL" starttime="20210920 13:56:39.390" endtime="20210920 13:58:30.012"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="3" skip="0" id="s1" name="RobotDemo">RobotDemo</stat>
+<stat pass="1" fail="3" skip="0" id="s1-s1" name="MyFirstTestSuite">RobotDemo.MyFirstTestSuite</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20210920 13:56:39.913" level="ERROR">Error in file 'H:\RobotDemo\Resources\LoginResources.robot' on line 4: Importing library 'Resources/JsonActions.py.JsonOperations' failed: ModuleNotFoundError: No module named 'Resources/JsonActions'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Python39\Scripts\robot.exe
+  c:\python39\python39.zip
+  c:\python39\DLLs
+  c:\python39\lib
+  c:\python39
+  c:\python39\lib\site-packages
+  c:\python39\lib\site-packages\pip-21.2.4-py3.9.egg
+  c:\python39\lib\site-packages\win32
+  c:\python39\lib\site-packages\win32\lib
+  c:\python39\lib\site-packages\Pythonwin
+  c:\python39\lib\site-packages\robotide\contrib\testrunner\../../lib</msg>
+</errors>
+</robot>

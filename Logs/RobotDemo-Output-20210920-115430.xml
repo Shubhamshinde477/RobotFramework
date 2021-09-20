@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1 (Python 3.9.4 on win32)" generated="20210920 11:54:30.626" rpa="false" schemaversion="2">
+<suite id="s1" name="RobotDemo" source="H:\RobotDemo">
+<suite id="s1-s1" name="MyFirstTestSuite" source="H:\RobotDemo\MyFirstTestSuite.robot">
+<test id="s1-s1-t1" name="JsonData.robot">
+<kw name="For ${username} in @{user}">
+<msg timestamp="20210920 11:54:31.035" level="FAIL">No keyword with name 'For ${username} in @{user}' found.</msg>
+<status status="FAIL" starttime="20210920 11:54:31.035" endtime="20210920 11:54:31.036"/>
+</kw>
+<kw name="For ${password} in @{password}">
+<status status="NOT RUN" starttime="20210920 11:54:31.041" endtime="20210920 11:54:31.041"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Testing Json robot Framework Demo with different usernames and password</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20210920 11:54:31.041" endtime="20210920 11:54:31.042"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="NOT RUN" starttime="20210920 11:54:31.042" endtime="20210920 11:54:31.042"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20210920 11:54:31.043" endtime="20210920 11:54:31.043"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20210920 11:54:31.043" endtime="20210920 11:54:31.044"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=txtUsername</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210920 11:54:31.044" endtime="20210920 11:54:31.044"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=txtPassword</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210920 11:54:31.045" endtime="20210920 11:54:31.045"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20210920 11:54:31.046" endtime="20210920 11:54:31.046"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id=btnLogin</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210920 11:54:31.047" endtime="20210920 11:54:31.047"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20210920 11:54:31.048" endtime="20210920 11:54:31.049"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20210920 11:54:31.049" endtime="20210920 11:54:31.050"/>
+</kw>
+<status status="FAIL" starttime="20210920 11:54:31.030" endtime="20210920 11:54:31.051">No keyword with name 'For ${username} in @{user}' found.</status>
+</test>
+<status status="FAIL" starttime="20210920 11:54:30.887" endtime="20210920 11:54:31.052"/>
+</suite>
+<status status="FAIL" starttime="20210920 11:54:30.658" endtime="20210920 11:54:31.055"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="RobotDemo">RobotDemo</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="MyFirstTestSuite">RobotDemo.MyFirstTestSuite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

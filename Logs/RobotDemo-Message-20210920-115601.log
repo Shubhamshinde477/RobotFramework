@@ -1,0 +1,52 @@
+==============================================================================
+20210920 11:56:01.986 - INFO - + START SUITE: RobotDemo [ ]
+==============================================================================
+20210920 11:56:02.128 - INFO - +- START SUITE: RobotDemo.MyFirstTestSuite [ ]
+==============================================================================
+20210920 11:56:02.130 - INFO - +-- START TEST: JsonData.robot [ ]
+------------------------------------------------------------------------------
+20210920 11:56:02.130 - INFO - +--- START KEYWORD: Reserved.For [ ${username} | in | @{user} ]
+20210920 11:56:02.131 - FAIL - 'For' is a reserved keyword. It must be an upper case 'FOR' when used as a marker.
+20210920 11:56:02.132 - DEBUG - Traceback (most recent call last):
+  None
+20210920 11:56:02.133 - INFO - +--- END KEYWORD: Reserved.For (2)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20210920 11:56:02.133 - INFO - +--- START KEYWORD: Reserved.For [ ${password} | in | @{password} ]
+20210920 11:56:02.134 - INFO - +--- END KEYWORD: Reserved.For (0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20210920 11:56:02.134 - INFO - +--- START KEYWORD: BuiltIn.Log To Console [ Testing Json robot Framework Demo with different usernames and password ]
+20210920 11:56:02.134 - INFO - +--- END KEYWORD: BuiltIn.Log To Console (0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20210920 11:56:02.135 - INFO - +--- START KEYWORD: SeleniumLibrary.Open Browser [ ${url} | Chrome ]
+20210920 11:56:02.135 - INFO - +--- END KEYWORD: SeleniumLibrary.Open Browser (0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20210920 11:56:02.135 - INFO - +--- START KEYWORD: SeleniumLibrary.Maximize Browser Window [ ]
+20210920 11:56:02.136 - INFO - +--- END KEYWORD: SeleniumLibrary.Maximize Browser Window (1)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20210920 11:56:02.136 - INFO - +--- START KEYWORD: BuiltIn.Sleep [ 10 seconds ]
+20210920 11:56:02.137 - INFO - +--- END KEYWORD: BuiltIn.Sleep (1)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20210920 11:56:02.137 - INFO - +--- START KEYWORD: SeleniumLibrary.Input Text [ id=txtUsername | ${username} ]
+20210920 11:56:02.138 - INFO - +--- END KEYWORD: SeleniumLibrary.Input Text (1)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20210920 11:56:02.138 - INFO - +--- START KEYWORD: SeleniumLibrary.Input Text [ id=txtPassword | ${password} ]
+20210920 11:56:02.138 - INFO - +--- END KEYWORD: SeleniumLibrary.Input Text (0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20210920 11:56:02.139 - INFO - +--- START KEYWORD: BuiltIn.Sleep [ 10 seconds ]
+20210920 11:56:02.139 - INFO - +--- END KEYWORD: BuiltIn.Sleep (0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20210920 11:56:02.139 - INFO - +--- START KEYWORD: SeleniumLibrary.Click Button [ id=btnLogin ]
+20210920 11:56:02.140 - INFO - +--- END KEYWORD: SeleniumLibrary.Click Button (1)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20210920 11:56:02.140 - INFO - +--- START KEYWORD: BuiltIn.Sleep [ 10 seconds ]
+20210920 11:56:02.141 - INFO - +--- END KEYWORD: BuiltIn.Sleep (0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20210920 11:56:02.141 - INFO - +--- START KEYWORD: SeleniumLibrary.Close Browser [ ]
+20210920 11:56:02.141 - INFO - +--- END KEYWORD: SeleniumLibrary.Close Browser (0)
+------------------------------------------------------------------------------
+20210920 11:56:02.142 - INFO - +-- END TEST: JsonData.robot (13)
+------------------------------------------------------------------------------
+20210920 11:56:02.144 - INFO - +- END SUITE: RobotDemo.MyFirstTestSuite (156)
+==============================================================================
+20210920 11:56:02.147 - INFO - + END SUITE: RobotDemo (375)
+==============================================================================

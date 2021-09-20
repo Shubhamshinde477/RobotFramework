@@ -1,0 +1,64 @@
+==============================================================================
+20210920 12:18:42.608 - INFO - + START SUITE: RobotDemo [ ]
+==============================================================================
+20210920 12:18:42.748 - INFO - +- START SUITE: RobotDemo.MyFirstTestSuite [ ]
+==============================================================================
+20210920 12:18:42.748 - INFO - +-- START TEST: JsonData.robot [ ]
+------------------------------------------------------------------------------
+20210920 12:18:42.748 - INFO - +--- START FOR: ${username} IN [ @{user} ] [ ]
+20210920 12:18:42.748 - INFO - +---- START FOR ITERATION: ${username} = Get Value From Json [ ]
+20210920 12:18:42.748 - INFO - +----- START FOR: ${password} IN [ @{password} ] [ ]
+20210920 12:18:42.748 - INFO - +------ START FOR ITERATION: ${password} = Get Value From Json [ ]
+20210920 12:18:42.748 - INFO - +------- START KEYWORD: BuiltIn.Log To Console [ Testing Json robot Framework Demo with different usernames and password ]
+20210920 12:18:42.748 - INFO - +------- END KEYWORD: BuiltIn.Log To Console (0)
+20210920 12:18:42.748 - INFO - +------- START KEYWORD: SeleniumLibrary.Open Browser [ ${url} | Chrome ]
+20210920 12:18:42.757 - INFO - Opening browser 'Chrome' to base url 'Get Value From Json Load JSON From File TestData/JsonData.json json $..url'.
+20210920 12:18:44.320 - DEBUG - Opened browser with session id 951fdf3ffecf55e87b77b9d55d39e3ff but failed to open url 'Get Value From Json Load JSON From File TestData/JsonData.json json $..url'.
+20210920 12:18:44.321 - INFO - +-------- START KEYWORD: SeleniumLibrary.Capture Page Screenshot [ ]
+20210920 12:18:44.433 - INFO - </td></tr><tr><td colspan="3"><a href="selenium-screenshot-6.png"><img src="selenium-screenshot-6.png" width="800px"></a>
+20210920 12:18:44.433 - INFO - +-------- END KEYWORD: SeleniumLibrary.Capture Page Screenshot (112)
+20210920 12:18:44.433 - FAIL - InvalidArgumentException: Message: invalid argument
+  (Session info: chrome=93.0.4577.82)
+20210920 12:18:44.433 - DEBUG - Traceback (most recent call last):
+  File "c:\python39\lib\site-packages\SeleniumLibrary\__init__.py", line 492, in run_keyword
+    return DynamicCore.run_keyword(self, name, args, kwargs)
+  File "c:\python39\lib\site-packages\robotlibcore.py", line 94, in run_keyword
+    return self.keywords[name](*args, **(kwargs or {}))
+  File "c:\python39\lib\site-packages\SeleniumLibrary\keywords\browsermanagement.py", line 293, in open_browser
+    return self._make_new_browser(
+  File "c:\python39\lib\site-packages\SeleniumLibrary\keywords\browsermanagement.py", line 337, in _make_new_browser
+    driver.get(url)
+  File "c:\python39\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "c:\python39\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "c:\python39\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+20210920 12:18:44.449 - INFO - +------- END KEYWORD: SeleniumLibrary.Open Browser (1685)
+20210920 12:18:44.449 - INFO - +------- START KEYWORD: SeleniumLibrary.Maximize Browser Window [ ]
+20210920 12:18:44.449 - INFO - +------- END KEYWORD: SeleniumLibrary.Maximize Browser Window (0)
+20210920 12:18:44.449 - INFO - +------- START KEYWORD: BuiltIn.Sleep [ 10 seconds ]
+20210920 12:18:44.452 - INFO - +------- END KEYWORD: BuiltIn.Sleep (3)
+20210920 12:18:44.452 - INFO - +------- START KEYWORD: SeleniumLibrary.Input Text [ id=txtUsername | ${username} ]
+20210920 12:18:44.453 - INFO - +------- END KEYWORD: SeleniumLibrary.Input Text (1)
+20210920 12:18:44.455 - INFO - +------- START KEYWORD: SeleniumLibrary.Input Text [ id=txtPassword | ${password} ]
+20210920 12:18:44.455 - INFO - +------- END KEYWORD: SeleniumLibrary.Input Text (0)
+20210920 12:18:44.455 - INFO - +------- START KEYWORD: BuiltIn.Sleep [ 10 seconds ]
+20210920 12:18:44.456 - INFO - +------- END KEYWORD: BuiltIn.Sleep (0)
+20210920 12:18:44.456 - INFO - +------- START KEYWORD: SeleniumLibrary.Click Button [ id=btnLogin ]
+20210920 12:18:44.456 - INFO - +------- END KEYWORD: SeleniumLibrary.Click Button (0)
+20210920 12:18:44.458 - INFO - +------- START KEYWORD: BuiltIn.Sleep [ 10 seconds ]
+20210920 12:18:44.458 - INFO - +------- END KEYWORD: BuiltIn.Sleep (0)
+20210920 12:18:44.458 - INFO - +------- START KEYWORD: SeleniumLibrary.Close Browser [ ]
+20210920 12:18:44.458 - INFO - +------- END KEYWORD: SeleniumLibrary.Close Browser (0)
+20210920 12:18:44.458 - INFO - +------ END FOR ITERATION: ${password} = Get Value From Json (1710)
+20210920 12:18:44.459 - INFO - +----- END FOR: ${password} IN [ @{password} ] (1711)
+20210920 12:18:44.460 - INFO - +---- END FOR ITERATION: ${username} = Get Value From Json (1711)
+20210920 12:18:44.460 - INFO - +--- END FOR: ${username} IN [ @{user} ] (1712)
+------------------------------------------------------------------------------
+20210920 12:18:44.461 - INFO - +-- END TEST: JsonData.robot (1712)
+------------------------------------------------------------------------------
+20210920 12:18:44.465 - INFO - +- END SUITE: RobotDemo.MyFirstTestSuite (1854)
+==============================================================================
+20210920 12:18:44.469 - INFO - + END SUITE: RobotDemo (2076)
+==============================================================================

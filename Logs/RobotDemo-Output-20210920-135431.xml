@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1 (Python 3.9.4 on win32)" generated="20210920 13:54:31.266" rpa="false" schemaversion="2">
+<suite id="s1" name="RobotDemo" source="H:\RobotDemo">
+<suite id="s1-s1" name="MyFirstTestSuite" source="H:\RobotDemo\MyFirstTestSuite.robot">
+<test id="s1-s1-t1" name="firstFile.robot">
+<kw name="Log To Console" library="BuiltIn">
+<arg>This is my first working test case</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210920 13:54:31.813" endtime="20210920 13:54:31.813"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210920 13:54:31.820" level="INFO">Opening browser 'Chrome' to base url 'Get Value From Json Load JSON From File TestData/JsonData.json json $..url'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210920 13:54:33.508" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210920 13:54:33.369" endtime="20210920 13:54:33.508"/>
+</kw>
+<msg timestamp="20210920 13:54:33.516" level="FAIL">InvalidArgumentException: Message: invalid argument
+  (Session info: chrome=93.0.4577.82)
+</msg>
+<status status="FAIL" starttime="20210920 13:54:31.813" endtime="20210920 13:54:33.517"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20210920 13:54:33.517" endtime="20210920 13:54:33.517"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20210920 13:54:33.518" endtime="20210920 13:54:33.518"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20210920 13:54:33.519" endtime="20210920 13:54:33.519"/>
+</kw>
+<status status="FAIL" starttime="20210920 13:54:31.813" endtime="20210920 13:54:33.520">InvalidArgumentException: Message: invalid argument
+  (Session info: chrome=93.0.4577.82)
+</status>
+</test>
+<test id="s1-s1-t2" name="SecondRobot">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Starting Orange HRM website</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210920 13:54:33.523" endtime="20210920 13:54:33.524"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210920 13:54:33.525" level="INFO">Opening browser 'Chrome' to base url 'Get Value From Json Load JSON From File TestData/JsonData.json json $..url'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210920 13:54:35.471" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210920 13:54:35.351" endtime="20210920 13:54:35.471"/>
+</kw>
+<msg timestamp="20210920 13:54:35.471" level="FAIL">InvalidArgumentException: Message: invalid argument
+  (Session info: chrome=93.0.4577.82)
+</msg>
+<status status="FAIL" starttime="20210920 13:54:33.525" endtime="20210920 13:54:35.471"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20210920 13:54:35.471" endtime="20210920 13:54:35.471"/>
+</kw>
+<kw name="Login" library="LoginResources">
+<status status="NOT RUN" starttime="20210920 13:54:35.471" endtime="20210920 13:54:35.471"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20210920 13:54:35.486" endtime="20210920 13:54:35.486"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Title Should Be</arg>
+<arg>OrangeHRM</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20210920 13:54:35.486" endtime="20210920 13:54:35.486"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20210920 13:54:35.486" endtime="20210920 13:54:35.486"/>
+</kw>
+<status status="FAIL" starttime="20210920 13:54:33.522" endtime="20210920 13:54:35.486">InvalidArgumentException: Message: invalid argument
+  (Session info: chrome=93.0.4577.82)
+</status>
+</test>
+<test id="s1-s1-t3" name="ThirdRobot.robot">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Started 3rd Test</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210920 13:54:35.486" endtime="20210920 13:54:35.486"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210920 13:54:35.486" level="INFO">Opening browser 'chrome' to base url 'Get Value From Json Load JSON From File TestData/JsonData.json json $..url'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210920 13:54:37.560" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-13.png"&gt;&lt;img src="selenium-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210920 13:54:37.410" endtime="20210920 13:54:37.560"/>
+</kw>
+<msg timestamp="20210920 13:54:37.562" level="FAIL">InvalidArgumentException: Message: invalid argument
+  (Session info: chrome=93.0.4577.82)
+</msg>
+<status status="FAIL" starttime="20210920 13:54:35.486" endtime="20210920 13:54:37.563"/>
+</kw>
+<kw name="Login" library="LoginResources">
+<status status="NOT RUN" starttime="20210920 13:54:37.564" endtime="20210920 13:54:37.564"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20210920 13:54:37.565" endtime="20210920 13:54:37.566"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20210920 13:54:37.566" endtime="20210920 13:54:37.567"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20210920 13:54:37.568" endtime="20210920 13:54:37.568"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>3rd test Ran successfully and Logs file saved successfully</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20210920 13:54:37.568" endtime="20210920 13:54:37.569"/>
+</kw>
+<status status="FAIL" starttime="20210920 13:54:35.486" endtime="20210920 13:54:37.570">InvalidArgumentException: Message: invalid argument
+  (Session info: chrome=93.0.4577.82)
+</status>
+</test>
+<test id="s1-s1-t4" name="JsonData.robot">
+<for flavor="IN">
+<var>${username}</var>
+<value>@{user}</value>
+<iter>
+<var name="${username}">access_key</var>
+<for flavor="IN">
+<var>${password}</var>
+<value>@{password}</value>
+<iter>
+<var name="${password}">access_key</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Testing Json robot Framework Demo with different usernames and password</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210920 13:54:37.578" endtime="20210920 13:54:37.579"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210920 13:54:37.580" level="INFO">Opening browser 'Chrome' to base url 'Get Value From Json Load JSON From File TestData/JsonData.json json $..url'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210920 13:54:39.619" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-14.png"&gt;&lt;img src="selenium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210920 13:54:39.478" endtime="20210920 13:54:39.619"/>
+</kw>
+<msg timestamp="20210920 13:54:39.622" level="FAIL">InvalidArgumentException: Message: invalid argument
+  (Session info: chrome=93.0.4577.82)
+</msg>
+<status status="FAIL" starttime="20210920 13:54:37.580" endtime="20210920 13:54:39.623"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20210920 13:54:39.624" endtime="20210920 13:54:39.625"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20210920 13:54:39.625" endtime="20210920 13:54:39.626"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=txtUsername</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210920 13:54:39.626" endtime="20210920 13:54:39.627"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=txtPassword</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210920 13:54:39.627" endtime="20210920 13:54:39.628"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20210920 13:54:39.629" endtime="20210920 13:54:39.629"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id=btnLogin</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210920 13:54:39.630" endtime="20210920 13:54:39.630"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20210920 13:54:39.630" endtime="20210920 13:54:39.631"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20210920 13:54:39.631" endtime="20210920 13:54:39.632"/>
+</kw>
+<status status="FAIL" starttime="20210920 13:54:37.577" endtime="20210920 13:54:39.632"/>
+</iter>
+<status status="FAIL" starttime="20210920 13:54:37.576" endtime="20210920 13:54:39.633"/>
+</for>
+<status status="FAIL" starttime="20210920 13:54:37.575" endtime="20210920 13:54:39.634"/>
+</iter>
+<status status="FAIL" starttime="20210920 13:54:37.573" endtime="20210920 13:54:39.635"/>
+</for>
+<status status="FAIL" starttime="20210920 13:54:37.571" endtime="20210920 13:54:39.636">InvalidArgumentException: Message: invalid argument
+  (Session info: chrome=93.0.4577.82)
+</status>
+</test>
+<status status="FAIL" starttime="20210920 13:54:31.610" endtime="20210920 13:54:39.638"/>
+</suite>
+<status status="FAIL" starttime="20210920 13:54:31.313" endtime="20210920 13:54:39.644"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="4" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="4" skip="0" id="s1" name="RobotDemo">RobotDemo</stat>
+<stat pass="0" fail="4" skip="0" id="s1-s1" name="MyFirstTestSuite">RobotDemo.MyFirstTestSuite</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20210920 13:54:31.813" level="ERROR">Error in file 'H:\RobotDemo\Resources\LoginResources.robot' on line 4: Importing library 'Resources/JsonActions.py.JsonOperations' failed: ModuleNotFoundError: No module named 'Resources/JsonActions'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Python39\Scripts\robot.exe
+  c:\python39\python39.zip
+  c:\python39\DLLs
+  c:\python39\lib
+  c:\python39
+  c:\python39\lib\site-packages
+  c:\python39\lib\site-packages\pip-21.2.4-py3.9.egg
+  c:\python39\lib\site-packages\win32
+  c:\python39\lib\site-packages\win32\lib
+  c:\python39\lib\site-packages\Pythonwin
+  c:\python39\lib\site-packages\robotide\contrib\testrunner\../../lib</msg>
+</errors>
+</robot>

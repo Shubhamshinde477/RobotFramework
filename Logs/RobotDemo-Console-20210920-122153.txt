@@ -1,0 +1,51 @@
+command: robot -A C:\Users\Shubham\AppData\Local\Temp\RIDE4w7clp_l.d\argfile.txt --listener c:\python39\lib\site-packages\robotide\contrib\testrunner\TestRunnerAgent.py:57074:False H:\RobotDemo
+
+TestRunnerAgent: Running under CPython 3.9.4
+
+===========================================================================================================================================================
+RobotDemo                                                                                                                                                  
+===========================================================================================================================================================
+
+RobotDemo.MyFirstTestSuite                                                                                                                                 
+===========================================================================================================================================================
+firstFile.robot                                                                                                                                    This is my first working test case
+
+| FAIL |
+InvalidArgumentException: Message: invalid argument
+  (Session info: chrome=93.0.4577.82)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+SecondRobot                                                                                                                                        Starting Orange HRM website
+
+| FAIL |
+InvalidArgumentException: Message: invalid argument
+  (Session info: chrome=93.0.4577.82)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+ThirdRobot.robot                                                                                                                                   Started 3rd Test
+
+| FAIL |
+InvalidArgumentException: Message: invalid argument
+  (Session info: chrome=93.0.4577.82)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+JsonData.robot                                                                                                                                     Testing Json robot Framework Demo with different usernames and password
+
+| FAIL |
+InvalidArgumentException: Message: invalid argument
+  (Session info: chrome=93.0.4577.82)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+RobotDemo.MyFirstTestSuite                                                                                                                         | FAIL |
+4 tests, 0 passed, 4 failed
+===========================================================================================================================================================
+RobotDemo                                                                                                                                          | FAIL |
+4 tests, 0 passed, 4 failed
+===========================================================================================================================================================
+Debug:   H:\RobotDemo\Logs\RobotDemo-Message-20210920-122153.log
+Output:  H:\RobotDemo\Logs\RobotDemo-Output-20210920-122153.xml
+
+Log:     H:\RobotDemo\Logs\RobotDemo-Log-20210920-122153.html
+
+Report:  H:\RobotDemo\Logs\RobotDemo-Report-20210920-122153.html
+
+
+
+Test finished 20210920 12:22:01

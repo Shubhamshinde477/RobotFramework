@@ -1,0 +1,199 @@
+==============================================================================
+20210920 13:54:31.610 - INFO - + START SUITE: RobotDemo [ ]
+==============================================================================
+20210920 13:54:31.813 - INFO - +- START SUITE: RobotDemo.MyFirstTestSuite [ ]
+==============================================================================
+20210920 13:54:31.813 - INFO - +-- START TEST: firstFile.robot [ ]
+------------------------------------------------------------------------------
+20210920 13:54:31.813 - INFO - +--- START KEYWORD: BuiltIn.Log To Console [ This is my first working test case ]
+20210920 13:54:31.813 - INFO - +--- END KEYWORD: BuiltIn.Log To Console (0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20210920 13:54:31.813 - INFO - +--- START KEYWORD: SeleniumLibrary.Open Browser [ ${url} | Chrome ]
+20210920 13:54:31.820 - INFO - Opening browser 'Chrome' to base url 'Get Value From Json Load JSON From File TestData/JsonData.json json $..url'.
+20210920 13:54:33.369 - DEBUG - Opened browser with session id 275190c388c58afba0e12675ca1f9a33 but failed to open url 'Get Value From Json Load JSON From File TestData/JsonData.json json $..url'.
+20210920 13:54:33.369 - INFO - +---- START KEYWORD: SeleniumLibrary.Capture Page Screenshot [ ]
+20210920 13:54:33.508 - INFO - </td></tr><tr><td colspan="3"><a href="selenium-screenshot-11.png"><img src="selenium-screenshot-11.png" width="800px"></a>
+20210920 13:54:33.509 - INFO - +---- END KEYWORD: SeleniumLibrary.Capture Page Screenshot (139)
+20210920 13:54:33.516 - FAIL - InvalidArgumentException: Message: invalid argument
+  (Session info: chrome=93.0.4577.82)
+20210920 13:54:33.516 - DEBUG - Traceback (most recent call last):
+  File "c:\python39\lib\site-packages\SeleniumLibrary\__init__.py", line 492, in run_keyword
+    return DynamicCore.run_keyword(self, name, args, kwargs)
+  File "c:\python39\lib\site-packages\robotlibcore.py", line 94, in run_keyword
+    return self.keywords[name](*args, **(kwargs or {}))
+  File "c:\python39\lib\site-packages\SeleniumLibrary\keywords\browsermanagement.py", line 293, in open_browser
+    return self._make_new_browser(
+  File "c:\python39\lib\site-packages\SeleniumLibrary\keywords\browsermanagement.py", line 337, in _make_new_browser
+    driver.get(url)
+  File "c:\python39\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "c:\python39\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "c:\python39\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+20210920 13:54:33.517 - INFO - +--- END KEYWORD: SeleniumLibrary.Open Browser (1704)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20210920 13:54:33.517 - INFO - +--- START KEYWORD: SeleniumLibrary.Maximize Browser Window [ ]
+20210920 13:54:33.518 - INFO - +--- END KEYWORD: SeleniumLibrary.Maximize Browser Window (0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20210920 13:54:33.518 - INFO - +--- START KEYWORD: BuiltIn.Sleep [ 10 seconds ]
+20210920 13:54:33.518 - INFO - +--- END KEYWORD: BuiltIn.Sleep (0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20210920 13:54:33.519 - INFO - +--- START KEYWORD: SeleniumLibrary.Close Browser [ ]
+20210920 13:54:33.519 - INFO - +--- END KEYWORD: SeleniumLibrary.Close Browser (0)
+------------------------------------------------------------------------------
+20210920 13:54:33.521 - INFO - +-- END TEST: firstFile.robot (1707)
+------------------------------------------------------------------------------
+20210920 13:54:33.522 - INFO - +-- START TEST: SecondRobot [ ]
+------------------------------------------------------------------------------
+20210920 13:54:33.523 - INFO - +--- START KEYWORD: BuiltIn.Log To Console [ Starting Orange HRM website ]
+20210920 13:54:33.525 - INFO - +--- END KEYWORD: BuiltIn.Log To Console (1)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20210920 13:54:33.525 - INFO - +--- START KEYWORD: SeleniumLibrary.Open Browser [ ${url} | Chrome ]
+20210920 13:54:33.525 - INFO - Opening browser 'Chrome' to base url 'Get Value From Json Load JSON From File TestData/JsonData.json json $..url'.
+20210920 13:54:35.350 - DEBUG - Opened browser with session id a29d321e4b7f42d83d1f99de27db4551 but failed to open url 'Get Value From Json Load JSON From File TestData/JsonData.json json $..url'.
+20210920 13:54:35.351 - INFO - +---- START KEYWORD: SeleniumLibrary.Capture Page Screenshot [ ]
+20210920 13:54:35.471 - INFO - </td></tr><tr><td colspan="3"><a href="selenium-screenshot-12.png"><img src="selenium-screenshot-12.png" width="800px"></a>
+20210920 13:54:35.471 - INFO - +---- END KEYWORD: SeleniumLibrary.Capture Page Screenshot (120)
+20210920 13:54:35.471 - FAIL - InvalidArgumentException: Message: invalid argument
+  (Session info: chrome=93.0.4577.82)
+20210920 13:54:35.471 - DEBUG - Traceback (most recent call last):
+  File "c:\python39\lib\site-packages\SeleniumLibrary\__init__.py", line 492, in run_keyword
+    return DynamicCore.run_keyword(self, name, args, kwargs)
+  File "c:\python39\lib\site-packages\robotlibcore.py", line 94, in run_keyword
+    return self.keywords[name](*args, **(kwargs or {}))
+  File "c:\python39\lib\site-packages\SeleniumLibrary\keywords\browsermanagement.py", line 293, in open_browser
+    return self._make_new_browser(
+  File "c:\python39\lib\site-packages\SeleniumLibrary\keywords\browsermanagement.py", line 337, in _make_new_browser
+    driver.get(url)
+  File "c:\python39\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "c:\python39\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "c:\python39\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+20210920 13:54:35.471 - INFO - +--- END KEYWORD: SeleniumLibrary.Open Browser (1946)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20210920 13:54:35.471 - INFO - +--- START KEYWORD: SeleniumLibrary.Maximize Browser Window [ ]
+20210920 13:54:35.471 - INFO - +--- END KEYWORD: SeleniumLibrary.Maximize Browser Window (0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20210920 13:54:35.471 - INFO - +--- START KEYWORD: LoginResources.Login [ ]
+20210920 13:54:35.471 - INFO - +--- END KEYWORD: LoginResources.Login (0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20210920 13:54:35.486 - INFO - +--- START KEYWORD: BuiltIn.Sleep [ 10 seconds ]
+20210920 13:54:35.486 - INFO - +--- END KEYWORD: BuiltIn.Sleep (0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20210920 13:54:35.486 - INFO - +--- START KEYWORD: BuiltIn.Log To Console [ Title Should Be | OrangeHRM ]
+20210920 13:54:35.486 - INFO - +--- END KEYWORD: BuiltIn.Log To Console (0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20210920 13:54:35.486 - INFO - +--- START KEYWORD: SeleniumLibrary.Close Browser [ ]
+20210920 13:54:35.486 - INFO - +--- END KEYWORD: SeleniumLibrary.Close Browser (0)
+------------------------------------------------------------------------------
+20210920 13:54:35.486 - INFO - +-- END TEST: SecondRobot (1964)
+------------------------------------------------------------------------------
+20210920 13:54:35.486 - INFO - +-- START TEST: ThirdRobot.robot [ ]
+------------------------------------------------------------------------------
+20210920 13:54:35.486 - INFO - +--- START KEYWORD: BuiltIn.Log To Console [ Started 3rd Test ]
+20210920 13:54:35.486 - INFO - +--- END KEYWORD: BuiltIn.Log To Console (0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20210920 13:54:35.486 - INFO - +--- START KEYWORD: SeleniumLibrary.Open Browser [ ${url} | chrome ]
+20210920 13:54:35.486 - INFO - Opening browser 'chrome' to base url 'Get Value From Json Load JSON From File TestData/JsonData.json json $..url'.
+20210920 13:54:37.410 - DEBUG - Opened browser with session id 9c513580f6aa95c8fa7ab10e0fb9b80a but failed to open url 'Get Value From Json Load JSON From File TestData/JsonData.json json $..url'.
+20210920 13:54:37.411 - INFO - +---- START KEYWORD: SeleniumLibrary.Capture Page Screenshot [ ]
+20210920 13:54:37.560 - INFO - </td></tr><tr><td colspan="3"><a href="selenium-screenshot-13.png"><img src="selenium-screenshot-13.png" width="800px"></a>
+20210920 13:54:37.561 - INFO - +---- END KEYWORD: SeleniumLibrary.Capture Page Screenshot (150)
+20210920 13:54:37.562 - FAIL - InvalidArgumentException: Message: invalid argument
+  (Session info: chrome=93.0.4577.82)
+20210920 13:54:37.563 - DEBUG - Traceback (most recent call last):
+  File "c:\python39\lib\site-packages\SeleniumLibrary\__init__.py", line 492, in run_keyword
+    return DynamicCore.run_keyword(self, name, args, kwargs)
+  File "c:\python39\lib\site-packages\robotlibcore.py", line 94, in run_keyword
+    return self.keywords[name](*args, **(kwargs or {}))
+  File "c:\python39\lib\site-packages\SeleniumLibrary\keywords\browsermanagement.py", line 293, in open_browser
+    return self._make_new_browser(
+  File "c:\python39\lib\site-packages\SeleniumLibrary\keywords\browsermanagement.py", line 337, in _make_new_browser
+    driver.get(url)
+  File "c:\python39\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "c:\python39\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "c:\python39\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+20210920 13:54:37.563 - INFO - +--- END KEYWORD: SeleniumLibrary.Open Browser (2077)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20210920 13:54:37.564 - INFO - +--- START KEYWORD: LoginResources.Login [ ]
+20210920 13:54:37.565 - INFO - +--- END KEYWORD: LoginResources.Login (0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20210920 13:54:37.565 - INFO - +--- START KEYWORD: SeleniumLibrary.Maximize Browser Window [ ]
+20210920 13:54:37.566 - INFO - +--- END KEYWORD: SeleniumLibrary.Maximize Browser Window (1)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20210920 13:54:37.566 - INFO - +--- START KEYWORD: BuiltIn.Sleep [ 10 seconds ]
+20210920 13:54:37.567 - INFO - +--- END KEYWORD: BuiltIn.Sleep (1)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20210920 13:54:37.568 - INFO - +--- START KEYWORD: SeleniumLibrary.Close Browser [ ]
+20210920 13:54:37.568 - INFO - +--- END KEYWORD: SeleniumLibrary.Close Browser (0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20210920 13:54:37.569 - INFO - +--- START KEYWORD: BuiltIn.Log To Console [ 3rd test Ran successfully and Logs file saved successfully ]
+20210920 13:54:37.569 - INFO - +--- END KEYWORD: BuiltIn.Log To Console (1)
+------------------------------------------------------------------------------
+20210920 13:54:37.571 - INFO - +-- END TEST: ThirdRobot.robot (2084)
+------------------------------------------------------------------------------
+20210920 13:54:37.572 - INFO - +-- START TEST: JsonData.robot [ ]
+------------------------------------------------------------------------------
+20210920 13:54:37.573 - INFO - +--- START FOR: ${username} IN [ @{user} ] [ ]
+20210920 13:54:37.576 - INFO - +---- START FOR ITERATION: ${username} = access_key [ ]
+20210920 13:54:37.576 - INFO - +----- START FOR: ${password} IN [ @{password} ] [ ]
+20210920 13:54:37.577 - INFO - +------ START FOR ITERATION: ${password} = access_key [ ]
+20210920 13:54:37.578 - INFO - +------- START KEYWORD: BuiltIn.Log To Console [ Testing Json robot Framework Demo with different usernames and password ]
+20210920 13:54:37.579 - INFO - +------- END KEYWORD: BuiltIn.Log To Console (1)
+20210920 13:54:37.580 - INFO - +------- START KEYWORD: SeleniumLibrary.Open Browser [ ${url} | Chrome ]
+20210920 13:54:37.580 - INFO - Opening browser 'Chrome' to base url 'Get Value From Json Load JSON From File TestData/JsonData.json json $..url'.
+20210920 13:54:39.478 - DEBUG - Opened browser with session id 43f880cc305f47e368c9193179c9ad0b but failed to open url 'Get Value From Json Load JSON From File TestData/JsonData.json json $..url'.
+20210920 13:54:39.478 - INFO - +-------- START KEYWORD: SeleniumLibrary.Capture Page Screenshot [ ]
+20210920 13:54:39.619 - INFO - </td></tr><tr><td colspan="3"><a href="selenium-screenshot-14.png"><img src="selenium-screenshot-14.png" width="800px"></a>
+20210920 13:54:39.620 - INFO - +-------- END KEYWORD: SeleniumLibrary.Capture Page Screenshot (141)
+20210920 13:54:39.622 - FAIL - InvalidArgumentException: Message: invalid argument
+  (Session info: chrome=93.0.4577.82)
+20210920 13:54:39.623 - DEBUG - Traceback (most recent call last):
+  File "c:\python39\lib\site-packages\SeleniumLibrary\__init__.py", line 492, in run_keyword
+    return DynamicCore.run_keyword(self, name, args, kwargs)
+  File "c:\python39\lib\site-packages\robotlibcore.py", line 94, in run_keyword
+    return self.keywords[name](*args, **(kwargs or {}))
+  File "c:\python39\lib\site-packages\SeleniumLibrary\keywords\browsermanagement.py", line 293, in open_browser
+    return self._make_new_browser(
+  File "c:\python39\lib\site-packages\SeleniumLibrary\keywords\browsermanagement.py", line 337, in _make_new_browser
+    driver.get(url)
+  File "c:\python39\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "c:\python39\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "c:\python39\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+20210920 13:54:39.624 - INFO - +------- END KEYWORD: SeleniumLibrary.Open Browser (2043)
+20210920 13:54:39.624 - INFO - +------- START KEYWORD: SeleniumLibrary.Maximize Browser Window [ ]
+20210920 13:54:39.625 - INFO - +------- END KEYWORD: SeleniumLibrary.Maximize Browser Window (1)
+20210920 13:54:39.625 - INFO - +------- START KEYWORD: BuiltIn.Sleep [ 10 seconds ]
+20210920 13:54:39.626 - INFO - +------- END KEYWORD: BuiltIn.Sleep (1)
+20210920 13:54:39.626 - INFO - +------- START KEYWORD: SeleniumLibrary.Input Text [ id=txtUsername | ${username} ]
+20210920 13:54:39.627 - INFO - +------- END KEYWORD: SeleniumLibrary.Input Text (1)
+20210920 13:54:39.627 - INFO - +------- START KEYWORD: SeleniumLibrary.Input Text [ id=txtPassword | ${password} ]
+20210920 13:54:39.628 - INFO - +------- END KEYWORD: SeleniumLibrary.Input Text (1)
+20210920 13:54:39.629 - INFO - +------- START KEYWORD: BuiltIn.Sleep [ 10 seconds ]
+20210920 13:54:39.629 - INFO - +------- END KEYWORD: BuiltIn.Sleep (0)
+20210920 13:54:39.630 - INFO - +------- START KEYWORD: SeleniumLibrary.Click Button [ id=btnLogin ]
+20210920 13:54:39.630 - INFO - +------- END KEYWORD: SeleniumLibrary.Click Button (0)
+20210920 13:54:39.630 - INFO - +------- START KEYWORD: BuiltIn.Sleep [ 10 seconds ]
+20210920 13:54:39.631 - INFO - +------- END KEYWORD: BuiltIn.Sleep (1)
+20210920 13:54:39.631 - INFO - +------- START KEYWORD: SeleniumLibrary.Close Browser [ ]
+20210920 13:54:39.632 - INFO - +------- END KEYWORD: SeleniumLibrary.Close Browser (1)
+20210920 13:54:39.633 - INFO - +------ END FOR ITERATION: ${password} = access_key (2055)
+20210920 13:54:39.633 - INFO - +----- END FOR: ${password} IN [ @{password} ] (2057)
+20210920 13:54:39.634 - INFO - +---- END FOR ITERATION: ${username} = access_key (2059)
+20210920 13:54:39.635 - INFO - +--- END FOR: ${username} IN [ @{user} ] (2062)
+------------------------------------------------------------------------------
+20210920 13:54:39.637 - INFO - +-- END TEST: JsonData.robot (2065)
+------------------------------------------------------------------------------
+20210920 13:54:39.643 - INFO - +- END SUITE: RobotDemo.MyFirstTestSuite (8028)
+==============================================================================
+20210920 13:54:39.648 - INFO - + END SUITE: RobotDemo (8331)
+==============================================================================

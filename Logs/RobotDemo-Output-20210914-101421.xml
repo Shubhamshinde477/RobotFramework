@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1 (Python 3.9.4 on win32)" generated="20210914 10:14:22.012" rpa="false" schemaversion="2">
+<suite id="s1" name="RobotDemo" source="H:\RobotDemo">
+<suite id="s1-s1" name="MyFirstTestSuite" source="H:\RobotDemo\MyFirstTestSuite.robot">
+<test id="s1-s1-t1" name="ThirdRobot.robot">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Starting 3rd Test</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210914 10:14:22.531" endtime="20210914 10:14:22.531"/>
+</kw>
+<kw name="Empty Directory" library="OperatingSystem">
+<arg>../Logs</arg>
+<doc>Deletes all the content from the given directory.</doc>
+<msg timestamp="20210914 10:14:22.533" level="INFO" html="true">Listing contents of directory '&lt;a href="file://H:\Logs"&gt;H:\Logs&lt;/a&gt;'.</msg>
+<msg timestamp="20210914 10:14:22.534" level="FAIL">Directory 'H:\Logs' does not exist.</msg>
+<status status="FAIL" starttime="20210914 10:14:22.532" endtime="20210914 10:14:22.534"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="NOT RUN" starttime="20210914 10:14:22.535" endtime="20210914 10:14:22.536"/>
+</kw>
+<kw name="Login" library="LoginResources">
+<status status="NOT RUN" starttime="20210914 10:14:22.537" endtime="20210914 10:14:22.537"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20210914 10:14:22.538" endtime="20210914 10:14:22.538"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20210914 10:14:22.539" endtime="20210914 10:14:22.539"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20210914 10:14:22.540" endtime="20210914 10:14:22.540"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>3rd test Ran successfully and Logs file saved successfully</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20210914 10:14:22.540" endtime="20210914 10:14:22.541"/>
+</kw>
+<status status="FAIL" starttime="20210914 10:14:22.530" endtime="20210914 10:14:22.541">Directory 'H:\Logs' does not exist.</status>
+</test>
+<status status="FAIL" starttime="20210914 10:14:22.508" endtime="20210914 10:14:22.543"/>
+</suite>
+<status status="FAIL" starttime="20210914 10:14:22.153" endtime="20210914 10:14:22.545"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="RobotDemo">RobotDemo</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="MyFirstTestSuite">RobotDemo.MyFirstTestSuite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

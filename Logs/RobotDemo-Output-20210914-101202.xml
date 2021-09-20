@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1 (Python 3.9.4 on win32)" generated="20210914 10:12:02.804" rpa="false" schemaversion="2">
+<suite id="s1" name="RobotDemo" source="H:\RobotDemo">
+<suite id="s1-s1" name="MyFirstTestSuite" source="H:\RobotDemo\MyFirstTestSuite.robot">
+<test id="s1-s1-t1" name="ThirdRobot.robot">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Starting 3rd Test</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210914 10:12:03.651" endtime="20210914 10:12:03.653"/>
+</kw>
+<kw name="Empty Directory" library="OperatingSystem">
+<arg>H:\RobotDemo\Logs</arg>
+<doc>Deletes all the content from the given directory.</doc>
+<msg timestamp="20210914 10:12:03.657" level="INFO" html="true">Listing contents of directory '&lt;a href="file://H:\RobotDemo\RobotDemoLogs"&gt;H:\RobotDemo\RobotDemoLogs&lt;/a&gt;'.</msg>
+<msg timestamp="20210914 10:12:03.660" level="FAIL">Directory 'H:\RobotDemo\RobotDemoLogs' does not exist.</msg>
+<status status="FAIL" starttime="20210914 10:12:03.656" endtime="20210914 10:12:03.661"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="NOT RUN" starttime="20210914 10:12:03.662" endtime="20210914 10:12:03.663"/>
+</kw>
+<kw name="Login" library="LoginResources">
+<status status="NOT RUN" starttime="20210914 10:12:03.664" endtime="20210914 10:12:03.664"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20210914 10:12:03.665" endtime="20210914 10:12:03.665"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20210914 10:12:03.666" endtime="20210914 10:12:03.667"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20210914 10:12:03.668" endtime="20210914 10:12:03.669"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>3rd test Ran successfully and Logs file saved successfully</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20210914 10:12:03.670" endtime="20210914 10:12:03.670"/>
+</kw>
+<status status="FAIL" starttime="20210914 10:12:03.649" endtime="20210914 10:12:03.672">Directory 'H:\RobotDemo\RobotDemoLogs' does not exist.</status>
+</test>
+<status status="FAIL" starttime="20210914 10:12:03.602" endtime="20210914 10:12:03.673"/>
+</suite>
+<status status="FAIL" starttime="20210914 10:12:02.851" endtime="20210914 10:12:03.676"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="RobotDemo">RobotDemo</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="MyFirstTestSuite">RobotDemo.MyFirstTestSuite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

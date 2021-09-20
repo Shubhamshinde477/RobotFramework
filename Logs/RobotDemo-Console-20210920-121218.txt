@@ -1,0 +1,32 @@
+command: robot -A C:\Users\Shubham\AppData\Local\Temp\RIDEb7iiygna.d\argfile.txt --listener c:\python39\lib\site-packages\robotide\contrib\testrunner\TestRunnerAgent.py:55626:False H:\RobotDemo
+
+TestRunnerAgent: Running under CPython 3.9.4
+
+===========================================================================================================================================================
+RobotDemo                                                                                                                                                  
+===========================================================================================================================================================
+
+RobotDemo.MyFirstTestSuite                                                                                                                                 
+===========================================================================================================================================================
+JsonData.robot                                                                                                                                     Testing Json robot Framework Demo with different usernames and password
+
+| FAIL |
+InvalidArgumentException: Message: invalid argument
+  (Session info: chrome=93.0.4577.82)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+RobotDemo.MyFirstTestSuite                                                                                                                         | FAIL |
+1 test, 0 passed, 1 failed
+===========================================================================================================================================================
+
+RobotDemo                                                                                                                                          | FAIL |
+1 test, 0 passed, 1 failed
+===========================================================================================================================================================
+Debug:   H:\RobotDemo\Logs\RobotDemo-Message-20210920-121218.log
+Output:  H:\RobotDemo\Logs\RobotDemo-Output-20210920-121218.xml
+
+Log:     H:\RobotDemo\Logs\RobotDemo-Log-20210920-121218.html
+Report:  H:\RobotDemo\Logs\RobotDemo-Report-20210920-121218.html
+
+
+
+Test finished 20210920 12:12:20

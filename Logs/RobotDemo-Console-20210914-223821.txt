@@ -1,0 +1,22 @@
+| PASS |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+ThirdRobot.robot                                                                                                                                   | FAIL |
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'H:\\RobotDemo\\Logs\\RobotDemo-Message-20210914-223822.log'
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+RobotDemo.MyFirstTestSuite                                                                                                                         | FAIL |
+3 tests, 2 passed, 1 failed
+===========================================================================================================================================================
+RobotDemo                                                                                                                                          | FAIL |
+3 tests, 2 passed, 1 failed
+===========================================================================================================================================================
+Debug:   H:\RobotDemo\Logs\RobotDemo-Message-20210914-223822.log
+
+Output:  H:\RobotDemo\Logs\RobotDemo-Output-20210914-223822.xml
+
+Log:     H:\RobotDemo\Logs\RobotDemo-Log-20210914-223822.html
+
+Report:  H:\RobotDemo\Logs\RobotDemo-Report-20210914-223822.html
+
+
+
+Test finished 20210914 22:39:28
